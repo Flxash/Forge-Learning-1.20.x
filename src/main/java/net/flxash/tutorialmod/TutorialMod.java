@@ -1,6 +1,7 @@
 package net.flxash.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.flxash.tutorialmod.block.ModBlocks;
 import net.flxash.tutorialmod.item.ModCreativeModeTabs;
 import net.flxash.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class TutorialMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
